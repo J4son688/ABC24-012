@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mumbai Bites</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- Bootstrap JS Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+</head>
+<body>
+  <header>
+    <!-- Bootstrap 5 Responsive Navbar -->
+<nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand logo" href="index.html">Mumbai <span>Bites</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="menu.html">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="events.html">Events</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contacts</a>
+          </li>
+           <li class="nav-item">
+          <a class="nav-link" href="feedback.html">Feedback</a>
+        </li>
+        </ul>
+      </div>
+    </div>
+
+    <script>
+  const links = document.querySelectorAll('.nav-link');
+  const currentPage = location.pathname.split("/").pop();
+
+  links.forEach(link => {
+    if (link.getAttribute("href") === currentPage) {
+      link.classList.add("active");
+    }
+  });
+</script>
+
+  </nav>
+  </header>
+
+   <!-- Hero Banner -->
+  <header class="eventspage-banner">
+    <div class="eventspage-content">
+      <h1 class="display-4" style="color:#FF6F0F;">Events at Mumbai Bites</h1>
+      <p class="lead">Good food meets great vibes. Join our upcoming events & be part of the flavor!</p>
+    </div>
+  </header>
+
+  <!-- Events Section -->
+  <section class="container py-5 text-light">
+    <h2 class="mb-4" style="color:#FF6F0F;">This is what the month of June has in store for us!</h2>
+
+    <!-- Event 1 -->
+    <div class="row align-items-center event-row">
+      <div class="col-md-4 fade-me">
+        <img src="images/bollywood-night.jpg" class="event-image" alt="Bollywood Night">
+      </div>
+      <div class="col-md-8 bg-dark p-4 rounded">
+        <h4>🍛 Bollywood Night – June 5</h4>
+        <p>Enjoy a special dinner menu while vibing to iconic Bollywood hits. Dress to impress!</p>
+      </div>
+    </div>
+
+    <!-- Event 2 -->
+    <div class="row align-items-center event-row">
+      <div class="col-md-4 fade-me">
+        <img src="images/open-mic.jpg" class="event-image" alt="Open Mic & Chai">
+      </div>
+      <div class="col-md-8 bg-dark p-4 rounded">
+        <h4>🎤 Open Mic & Chai – June 12</h4>
+        <p>Local poets and musicians take the stage. Sip masala chai and enjoy the vibes.</p>
+      </div>
+    </div>
+
+    <!-- Event 3 -->
+    <div class="row align-items-center event-row">
+      <div class="col-md-4 fade-me">
+        <img src="images/street-food.jpg" class="event-image" alt="Street Food Saturday">
+      </div>
+      <div class="col-md-8 bg-dark p-4 rounded">
+        <h4>🍲 Street Food Saturday – June 15</h4>
+        <p>A taste of Mumbai’s street food scene — from pav bhaji to pani puri, all in one night!</p>
+      </div>
+    </div>
+
+    <!-- Event 4 -->
+    <div class="row align-items-center event-row">
+      <div class="col-md-4 fade-me">
+        <img src="images/yoga-brunch.jpg" class="event-image" alt="Brunch & Balance">
+      </div>
+      <div class="col-md-8 bg-dark p-4 rounded">
+        <h4>🧘 Brunch & Balance – June 18</h4>
+        <p>Start your Sunday with a relaxing yoga session, followed by a wholesome Indian brunch.</p>
+      </div>
+    </div>
+
+    <!-- Event 5 -->
+    <div class="row align-items-center event-row">
+      <div class="col-md-4 fade-me">
+        <img src="images/food-festival.jpg" class="event-image" alt="Taste of India">
+      </div>
+      <div class="col-md-8 bg-dark p-4 rounded">
+        <h4>🎉 Taste of India: Food Festival – June 24</h4>
+        <p>Sample regional specialties from across India. Live cooking, music, and giveaways!</p>
+      </div>
+    </div>
+
+    <!-- Event 6 -->
+    <div class="row align-items-center event-row">
+      <div class="col-md-4 fade-me">
+        <img src="images/cooking-class.jpg" class="event-image" alt="Cook with Us">
+      </div>
+      <div class="col-md-8 bg-dark p-4 rounded">
+        <h4>👨‍🍳 Cook with Us – June 29</h4>
+        <p>Join our head chef for a hands-on Indian cooking class. Spots limited — reserve now!</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Footer -->
+  <section class="cta-footer">
+    <h4>Got an event idea or want to reserve a space?</h4>
+    <p>We love hosting birthdays, pop-ups, and cultural nights.</p>
+    <a href="contact.html" class="btn btn-light mt-3">Contact Us</a>
+  </section>
+  <footer class="site-footer text-light">
+  <div class="container py-4">
+    <div class="row">
+
+      <!-- Brand & Contact -->
+      <div class="col-md-4 mb-3">
+        <h5 class="text-uppercase" style="color: #FF6F0F;">Mumbai Bites</h5>
+        <p>Plot 123, Main Street<br>Gaborone, Botswana</p>
+        <p>+267 712 345 67<br>hello@mumbaibites.co.bw</p>
+      </div>
+
+      <!-- Navigation Links -->
+      <div class="col-md-4 mb-3">
+        <h6 class="text-uppercase">Quick Links</h6>
+        <ul class="list-unstyled">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Social Media -->
+       <div class="col-md-4 mb-3">
+          <h6 class="text-uppercase">Follow Us</h6>
+          <a href="https://www.instagram.com/mumbaibitesinc/" class="d-block mb-2"><i class="bi bi-instagram"></i>Instagram</a>
+          <a href="https://web.facebook.com/mumbaibitesinc/" class="d-block mb-2"><i class="bi bi-facebook"></i>Facebook</a>
+          <a href="https://x.com/i/flow/login?redirect_after_login=%2Fmumbaifoodbites" class="d-block"><i class="bi bi-twitter"></i>Twitter</a>
+        </div>
+
+    </div>
+
+    <hr style="border-color:#555;">
+    <p class="text-center small mb-0">© 2025 Mumbai Bites. All rights reserved.</p>
+  </div>
+</footer>
+  </body>
+  </html>
+ 

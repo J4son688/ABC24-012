@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mumbai Bites</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- Bootstrap JS Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+</head>
+<body>
+  <header>
+    <!-- Bootstrap 5 Responsive Navbar -->
+<nav class="navbar navbar-expand-lg">
+  <div class="container-fluid">
+    <a class="navbar-brand logo" href="index.html">Mumbai <span>Bites</span></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="menu.html">Menu</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="events.html">Events</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contacts</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link" href="feedback.html">Feedback</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <script>
+  const links = document.querySelectorAll('.nav-link');
+  const currentPage = location.pathname.split("/").pop();
+
+  links.forEach(link => {
+    if (link.getAttribute("href") === currentPage) {
+      link.classList.add("active");
+    }
+  });
+</script>
+
+</nav>
+
+<header class="aboutpage-banner text-center text-white d-flex align-items-center justify-content-center">
+  <div class="aboutpage-content">
+    <h1 class="display-4">About Mumbai Bites</h1>
+    <p class="lead">Rooted in tradition. Inspired by flavor. Powered by people.</p>
+  </div>
+</header>
+</header>
+
+<section class="container py-5 text-black">
+  <h2 style="color:#FF6F0F;" class="mb-4">Our Story</h2>
+  <p>
+    Mumbai Bites was born from a love of bold spices, hearty meals, and joyful gatherings.
+    What started as a humble kitchen experiment is now a local gem bringing authentic Indian street food to the heart of Gaborone.
+  </p>
+  <p>
+    We mix Mumbai’s energetic street flavors with a modern café vibe — creating a place where everyone feels welcome.
+  </p>
+</section>
+
+<section class="team-section text-center text-light">
+  <h2>Meet the Team</h2>
+
+  <!-- Chef -->
+  <div class="team-member my-5">
+    <img src="images/Arjun.jpg" class="team-img mb-3" alt="Chef Arjun">
+    <h4 class="highlight">Chef Arjun</h4>
+    <p>
+  With over 15 years in professional kitchens, <span class="highlight">Chef Arjun</span> brings both tradition and technique to Mumbai Bites. Born and raised in Pune, India, his culinary journey started at his grandfather’s roadside dhaba, where he learned to make rotis by hand before he could even reach the counter. That early passion turned into a profession when he earned a diploma from the <em>Institute of Hotel Management</em> in Mumbai.
+</p>
+<p>
+  Arjun has trained under master chefs across India and worked in five-star hotels before deciding to shift his focus to authentic regional cuisine. What sets him apart isn't just his mastery of spices, but his deep respect for the **roots of every recipe**. Whether it’s a simple dal tadka or a complex biryani, he believes every dish tells a story.
+</p>
+<p>
+  At Mumbai Bites, Chef Arjun is more than the head of the kitchen — he’s the soul behind the flavor. From hand-picking produce at local markets to blending his own garam masala mix, he brings precision and passion to every plate. He also runs cooking classes and food storytelling nights, making sure every guest not only eats, but connects.
+</p>
+
+  </div>
+
+  <!-- Founder -->
+  <div class="team-member my-5">
+    <img src="images/owner.jpg" class="team-img mb-3" alt="Neha Patel">
+    <h4 class="highlight">Neha Patel</h4>
+    <p>Founder and visionary behind Mumbai Bites. Storyteller, spice lover, and kitchen soul.</p>
+    <p><span class="highlight">Neha Patel</span> didn’t grow up in a kitchen — she grew up in the middle of Mumbai’s bustling Dadar market, where food wasn’t just survival, it was the heartbeat of the city. Her family ran a small spice stall there, and from the age of nine, Neha was grinding masalas by hand, tasting everything, and learning how each pinch could transform a dish into something magical.</p>
+      <p>She was never formally trained as a chef — her school was the streets. Her teachers were the <em>chaatwalas</em>, <em>dosa vendors</em>, <em>vada pav aunties</em>, and her mother, who ruled the home kitchen like a queen.</p>
+      <p>After finishing university, Neha moved to Botswana with her husband. Gaborone was quiet in comparison — warm and kind, but missing something. She couldn’t find the taste of home. No tangy pani puri, no fiery butter chicken, no comforting masala chai.</p>
+      <p>One night in 2022, she hosted a small dinner at her apartment. She made pav bhaji, paneer tikka, and mango lassi. Friends invited friends. Soon, she was cooking for 30 people every Friday. Word spread — not just about the food, but about how eating with Neha felt like visiting home.</p>
+      <p>That’s when she knew: <span class="highlight">Botswana didn’t just need Indian food. It needed Indian soul.</span></p>
+  </div>
+</section>
+
+
+<section class="text-center py-5" style="background-color: #1c1a17;">
+  <h3 style="color:#D1A27B;">Our Promise</h3>
+  <p style="max-width:700px; margin:auto; color:#FFFBF5;">
+    We believe in fresh ingredients, real flavors, and meaningful connections.
+    Whether you’re here for a quick bite or a full feast, we promise a warm welcome and unforgettable taste.
+  </p>
+</section>
+
+<footer class="site-footer text-light">
+  <div class="container py-4">
+    <div class="row">
+
+      <!-- Brand & Contact -->
+      <div class="col-md-4 mb-3">
+        <h5 class="text-uppercase" style="color: #FF6F0F;">Mumbai Bites</h5>
+        <p>Plot 123, Main Street<br>Gaborone, Botswana</p>
+        <p>+267 712 345 67<br>hello@mumbaibites.co.bw</p>
+      </div>
+
+      <!-- Navigation Links -->
+      <div class="col-md-4 mb-3">
+        <h6 class="text-uppercase">Quick Links</h6>
+        <ul class="list-unstyled">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Social Media -->
+       <div class="col-md-4 mb-3">
+          <h6 class="text-uppercase">Follow Us</h6>
+          <a href="https://www.instagram.com/mumbaibitesinc/" class="d-block mb-2"><i class="bi bi-instagram"></i>Instagram</a>
+          <a href="https://web.facebook.com/mumbaibitesinc/" class="d-block mb-2"><i class="bi bi-facebook"></i>Facebook</a>
+          <a href="https://x.com/i/flow/login?redirect_after_login=%2Fmumbaifoodbites" class="d-block"><i class="bi bi-twitter"></i>Twitter</a>
+        </div>
+
+    </div>
+
+    <hr style="border-color:#555;">
+    <p class="text-center small mb-0">© 2025 Mumbai Bites. All rights reserved.</p>
+  </div>
+</footer>
+</body>
+</html>

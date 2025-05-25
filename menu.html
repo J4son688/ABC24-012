@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mumbai Bites</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- Bootstrap JS Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+
+
+</head>
+<body class="menu-page">
+<section>
+  <header>
+    <!-- Bootstrap 5 Responsive Navbar -->
+<nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand logo" href="index.html">Mumbai <span>Bites</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="menu.html">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="events.html">Events</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contacts</a>
+          </li>
+           <li class="nav-item">
+          <a class="nav-link" href="feedback.html">Feedback</a>
+        </li>
+        </ul>
+      </div>
+    </div>
+
+    <script>
+  const links = document.querySelectorAll('.nav-link');
+  const currentPage = location.pathname.split("/").pop();
+
+  links.forEach(link => {
+    if (link.getAttribute("href") === currentPage) {
+      link.classList.add("active");
+    }
+  });
+</script>
+
+  </nav>
+  <!-- Menu Section -->
+  <section class="container py-5">
+    <h1 class="text-center mb-5" style="color: #FF6F0F;">Our Menu</h1>
+
+    <div class="row g-4">
+  </header>
+  <!-- Starters -->
+<h2 class="menu-section-title">Starters</h2>
+  <div class="row g-4 mb-5">
+    <div class="col-md-4 fade-me">
+      <img src="images/Samosa.jpg" class="img-fluid rounded" alt="Samosa" style="height:200px; width:200px; object-fit:cover;">
+      <h5 class="mt-3 text">Samosa</h5>
+      <p style="color:#D1A27B;">Crispy pastry filled with spicy potato & peas.</p>
+      <p style="color:#FF6F0F; font-weight:bold;">P12.00</p>
+    </div>
+
+      <div class="col-md-4 fade-me">
+      <img src="images/Paneer Tikka.jpg" class="img-fluid rounded" alt="Paneer Tikka" style="height:200px; width:200px; object-fit:cover;">
+      <h5 class="mt-3 text-light">Paneer Tikka</h5>
+      <p style="color:#D1A27B;">Grilled paneer cubes marinated in tandoori spices.</p>
+      <p style="color:#FF6F0F; font-weight:bold;">P20.00</p>
+    </div>
+
+      <div class="col-md-4 fade-me">
+      <img src="images/Papdi chaat.jpg" class="img-fluid rounded" alt="Papdi Chaat" style="height:200px; width:200px; object-fit:cover;">
+      <h5 class="mt-3 text-light">Papdi Chaat</h5>
+      <p style="color:#D1A27B;">Crispy wafers topped with yogurt, chutney & sev</p>
+      <p style="color:#FF6F0F; font-weight:bold;">P29.99</p>
+    </div>
+
+      <div class="col-md-4 fade-me">
+      <img src="images/Chicken Pakora.jpg" class="img-fluid rounded" alt="Chicken Pakora" style="height:200px; width:200px; object-fit:cover;">
+      <h5 class="mt-3 text-light">Chicken Pakora</h5>
+      <p style="color:#D1A27B;">Crispy, spiced chicken fritters deep-fried to perfection</p>
+      <p style="color:#FF6F0F; font-weight:bold;">P35.00</p>
+    </div>
+
+      <div class="col-md-4 fade-me">
+      <img src="images/Veg Spring Rolls.jpg" class="img-fluid rounded" alt="Veg Spring Rolls" style="height:200px; width:200px; object-fit:cover;">
+      <h5 class="mt-3 text-light">Veg Spring Rolls</h5>
+      <p style="color:#D1A27B;">Thin pastry filled with spicy Indian vegetables.</p>
+      <p style="color:#FF6F0F; font-weight:bold;">P15.00</p>
+    </div>
+
+      <div class="col-md-4 fade-me">
+      <img src="images/Aloo Tikki.jpg" class="img-fluid rounded" alt="Aloo Tikki" style="height:200px; width:200px; object-fit:cover;">
+      <h5 class="mt-3 text-light">Aloo Tikki</h5>
+      <p style="color:#D1A27B;">Crispy potato patties served with mint & tamarind chutney</p>
+      <p style="color:#FF6F0F; font-weight:bold;">P12.00</p>
+    </div>
+</div>
+
+<!-- Main Courses -->
+<h2 class="menu-section-title">Main Courses</h2>
+
+<div class="row g-4 mb-4 ">
+  <div class="col-md-4 fade-me">
+     <img src="images/Butter Chicken.jpg" class="img-fluid rounded" alt="Butter Chicken" style="height:200px; width:200px; object-fit:cover;">
+      <h5 class="mt-3 text-light">Butter Chicken</h5>
+      <p style="color:#D1A27B;">Tender chicken simmered in a rich tomato-butter sauce</p>
+      <p style="color:#FF6F0F; font-weight:bold;">P40.00</p>
+  </div>
+    
+
+  <div class="col-md-4 fade-me">
+     <img src="images/Veg Biryani.jpg" class="img-fluid rounded" alt="Veg Biryani" style="height:200px; width:200px; object-fit:cover;">
+      <h5 class="mt-3 text-light">Veg Biryani</h5>
+      <p style="color:#D1A27B;">Fragrant rice with vegetables and traditional Indian spices.</p>
+      <p style="color:#FF6F0F; font-weight:bold;">P20.00</p>
+  </div>
+    
+
+  <div class="col-md-4 fade-me">
+     <img src="images/Palak Paneer.jpg" class="img-fluid rounded" alt="Palak Paneer" style="height:200px; width:200px; object-fit:cover;">
+      <h5 class="mt-3 text-light">Palak Paneer</h5>
+      <p style="color:#D1A27B;">Creamy spinach curry with tender paneer cubes.</p>
+      <p style="color:#FF6F0F; font-weight:bold;">P25.00</p>
+  </div>
+
+  <div class="col-md-4 fade-me">
+     <img src="images/Rogan Josh.jpg" class="img-fluid rounded" alt="Rogan Josh" style="height:200px; width:200px; object-fit:cover;">
+      <h5 class="mt-3 text-light">Rogan Josh</h5>
+      <p style="color:#D1A27B;">Slow-cooked lamb in a rich Kashmiri-style curry.</p>
+      <p style="color:#FF6F0F; font-weight:bold;">P45.00</p>
+  </div>
+
+  <div class="col-md-4 fade-me ">
+     <img src="images/Chole Bhature.jpg" class="img-fluid rounded" alt="Chole Bhature" style="height:200px; width:200px; object-fit:cover;">
+      <h5 class="mt-3 text-light">Chole Bhature</h5>
+      <p style="color:#D1A27B;">Spiced chickpeas served with fluffy fried bread.</p>
+      <p style="color:#FF6F0F; font-weight:bold;">P22.00</p>
+  </div>
+    
+  <div class="col-md-4 fade-me">
+     <img src="images/Fish Curry.jpg" class="img-fluid rounded" alt="Fish Curry" style="height:200px; width:200px; object-fit:cover;">
+      <h5 class="mt-3 text-light">Fish Curry</h5>
+      <p style="color:#D1A27B;">Fish fillets in a tangy coconut mustard gravy.</p>
+      <p style="color:#FF6F0F; font-weight:bold;">P28.00</p>
+  </div>
+</div>
+
+<!-- Drinks -->
+<h2 class="menu-section-title">Drinks</h2>
+
+<div class="row g-4 mb-4">
+    <div class="col-md-4 fade-me">
+      <img src="images/Mango Lassi.jpg" class="img-fluid rounded" alt="Mango Lassi" style="height:200px; width:200px; object-fit:cover;">
+      <h5 class="mt-3 text-light">Mango Lassi</h5>
+      <p style="color:#D1A27B;">Sweet mango yogurt smoothie served chilled.</p>
+      <p style="color:#FF6F0F; font-weight:bold;">P22.00</p>
+    </div>
+    
+    <div class="col-md-4 fade-me">
+      <img src="images/Masala Chai.jpg" class="img-fluid rounded" alt="Masala Chai" style="height:200px; width:200px; object-fit:cover;">
+      <h5 class="mt-3 text-light">Masala Chai</h5>
+      <p style="color:#D1A27B;">Spiced Indian tea brewed with milk and herbs.</p>
+      <p style="color:#FF6F0F; font-weight:bold;">P10.00</p>
+    </div>
+
+    <div class="col-md-4 fade-me">
+      <img src="images/Sweet Lassi.jpg" class="img-fluid rounded" alt="Sweet Lassi" style="height:200px; width:200px; object-fit:cover;">
+      <h5 class="mt-3 text-light">Sweet Lassi</h5>
+      <p style="color:#D1A27B;">Traditional yogurt drink, sweetened and refreshing.</p>
+      <p style="color:#FF6F0F; font-weight:bold;">P24.00</p>
+    </div>
+
+    <div class="col-md-4 fade-me">
+      <img src="images/Filter Coffee.jpg" class="img-fluid rounded" alt="Filter Coffee" style="height:200px; width:200px; object-fit:cover;">
+      <h5 class="mt-3 text-light">Filter Coffee</h5>
+      <p style="color:#D1A27B;">Strong South Indian-style drip coffee with milk.</p>
+      <p style="color:#FF6F0F; font-weight:bold;">P9.99</p>
+    </div>
+
+    <div class="col-md-4 fade-me">
+      <img src="images/Lemon Soda.jpg" class="img-fluid rounded" alt="Lemon Soda" style="height:200px; width:200px; object-fit:cover;">
+      <h5 class="mt-3 text-light">Lemon Soda</h5>
+      <p style="color:#D1A27B;">Chilled fizzy lemon drink with a twist of salt or sugar.</p>
+      <p style="color:#FF6F0F; font-weight:bold;">P13.00</p>
+    </div>
+
+    <div class="col-md-4 fade-me">
+      <img src="images/Rose Milk.jpg" class="img-fluid rounded" alt="Rose Milk" style="height:200px; width:200px; object-fit:cover;">
+      <h5 class="mt-3 text-light">Rose Milk</h5>
+      <p style="color:#D1A27B;">Cool milk drink flavored with rose syrup and cardamom.</p>
+      <p style="color:#FF6F0F; font-weight:bold;">P24.00</p>
+    </div>
+</div>
+
+<!-- Desserts -->
+<h2 class="menu-section-title">Desserts</h2>
+
+<div class="row g-4 mb-4">
+  <div class="col-md-4 fade-me">
+      <img src="images/Gulab Jamun.jpg" class="img-fluid rounded" alt="Gulab Jamun" style="height:200px; width:200px; object-fit:cover;">
+      <h5 class="mt-3 text-light">Gulab Jamun</h5>
+      <p style="color:#D1A27B;">Milk-solid dumplings soaked in rose-flavored syrup.</p>
+      <p style="color:#FF6F0F; font-weight:bold;">P33.00</p>
+    </div>
+    
+    <div class="col-md-4 fade-me">
+      <img src="images/Kulfi.jpg" class="img-fluid rounded" alt="Kulfi" style="height:200px; width:200px; object-fit:cover;">
+      <h5 class="mt-3 text-light">Kulfi</h5>
+      <p style="color:#D1A27B;">Traditional Indian ice cream with pistachios and saffron.</p>
+      <p style="color:#FF6F0F; font-weight:bold;">P12.00</p>
+    </div>
+    
+    <div class="col-md-4 fade-me">
+      <img src="images/Rasgulla.jpg" class="img-fluid rounded" alt="Rasgulla" style="height:200px; width:200px; object-fit:cover;">
+      <h5 class="mt-3 text-light">Rasgulla</h5>
+      <p style="color:#D1A27B;">Soft and spongy cheese balls in light sugar syrup.</p>
+      <p style="color:#FF6F0F; font-weight:bold;">P15.99</p>
+    </div>
+    
+    <div class="col-md-4 fade-me">
+      <img src="images/Kheer.jpg" class="img-fluid rounded" alt="Kheer" style="height:200px; width:200px; object-fit:cover;">
+      <h5 class="mt-3 text-light">Kheer</h5>
+      <p style="color:#D1A27B;">Creamy rice pudding flavored with saffron and almonds.</p>
+      <p style="color:#FF6F0F; font-weight:bold;">P25.99</p>
+    </div>
+    
+    <div class="col-md-4 fade-me">
+      <img src="images/Jalebi.jpg" class="img-fluid rounded" alt="Jalebi" style="height:200px; width:200px; object-fit:cover;">
+      <h5 class="mt-3 text-light">Jalebi</h5>
+      <p style="color:#D1A27B;">Golden spiral sweets soaked in sweet syrup — crisp & juicy.</p>
+      <p style="color:#FF6F0F; font-weight:bold;">P20.00</p>
+    </div>
+    
+    <div class="col-md-4 fade-me">
+      <img src="images/Besan Ladoo.jpg" class="img-fluid rounded" alt="Besan Ladoo" style="height:200px; width:200px; object-fit:cover;">
+      <h5 class="mt-3 text-light">Besan Ladoo</h5>
+      <p style="color:#D1A27B;">Gram flour and ghee-based sweets — rich, nutty, and festive.</p>
+      <p style="color:#FF6F0F; font-weight:bold;">P10.00</p>
+    </div>
+   </div>
+  </section>
+
+  <footer class="site-footer text-light">
+  <div class="container py-4">
+    <div class="row">
+
+      <!-- Brand & Contact -->
+      <div class="col-md-4 mb-3">
+        <h5 class="text-uppercase" style="color: #FF6F0F;">Mumbai Bites</h5>
+        <p>Plot 123, Main Street<br>Gaborone, Botswana</p>
+        <p>+267 712 345 67<br>hello@mumbaibites.co.bw</p>
+      </div>
+
+      <!-- Navigation Links -->
+      <div class="col-md-4 mb-3">
+        <h6 class="text-uppercase">Quick Links</h6>
+        <ul class="list-unstyled">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Social Media -->
+       <div class="col-md-4 mb-3">
+          <h6 class="text-uppercase">Follow Us</h6>
+          <a href="https://www.instagram.com/mumbaibitesinc/" class="d-block mb-2"><i class="bi bi-instagram"></i>Instagram</a>
+          <a href="https://web.facebook.com/mumbaibitesinc/" class="d-block mb-2"><i class="bi bi-facebook"></i>Facebook</a>
+          <a href="https://x.com/i/flow/login?redirect_after_login=%2Fmumbaifoodbites" class="d-block"><i class="bi bi-twitter"></i>Twitter</a>
+        </div>
+
+    </div>
+
+    <hr style="border-color:#555;">
+    <p class="text-center small mb-0">© 2025 Mumbai Bites. All rights reserved.</p>
+  </div>
+</footer>
+
+<button onclick="scrollToTop()" id="topBtn" title="Go to top">
+  ↑ Top
+</button>
+<script>
+  // Show the button when scrolling down
+  window.onscroll = function () {
+    const topBtn = document.getElementById("topBtn");
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+      topBtn.style.display = "block";
+    } else {
+      topBtn.style.display = "none";
+    }
+  };
+
+  // Scroll to top when button is clicked
+  function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+</script>
+
+</body>  
+</html>
